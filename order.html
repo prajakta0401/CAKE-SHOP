@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cake Order Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body style="border: 5px solid black; border-radius: 25px ;">
+    <div class="container">
+      <h1>Cake Order Form</h1>
+      <form action="submit_order.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="flavor">Flavor:</label>
+        <select id="flavor" name="flavor">
+          <option value="chocolate">Chocolate</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="strawberry">Strawberry</option>
+        </select>
+
+        <label for="size">Size:</label>
+        <div class="radio-group">
+          <input type="radio" id="small" name="size" value="small">
+          <label for="small">Small</label>
+
+          <input type="radio" id="medium" name="size" value="medium">
+          <label for="medium">Medium</label>
+
+          <input type="radio" id="large" name="size" value="large">
+          <label for="large">Large</label>
+        </div>
+
+        <label for="special_requests">Special Requests:</label>
+        <textarea id="special_requests" name="special_requests"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
